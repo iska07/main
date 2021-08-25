@@ -1,6 +1,5 @@
-import "./App.css";
-// import "./Pages/Catalog"
 import Catalog from "./Pages/Catalog";
+import "./Style.css"
 // import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import {useState} from "react";
 
