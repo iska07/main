@@ -4,6 +4,7 @@ import "./Style.css";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { useState } from "react";
 import Header from "./Pages/header";
+// import GameList from "./Pages/GameList"
 
 function App() {
   const [num, setNum] = useState(2);
