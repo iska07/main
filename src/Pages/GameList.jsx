@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Catalog from "./Catalog"
 import { Link, useParams } from "react-router-dom";
 import { element } from "prop-types";
-import movie from "../movie.json"
+import movies from "../movies.json"
 
 function GameList() {
   const link = "https://image.tmdb.org/t/p/w500";
