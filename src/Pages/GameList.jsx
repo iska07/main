@@ -40,7 +40,7 @@ function GameList() {
           </div> */}
         </div>
 
-         {movie.map((item) => (
+         {movies.map((item) => (
           <Catalog data={item} />
         ))}
 
