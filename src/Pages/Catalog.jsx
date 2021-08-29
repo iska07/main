@@ -18,10 +18,10 @@ function Catalog (props) {
     console.log(props.data)
     return (
       <div className="Catalog">
-        <Link to={'/movie/' + props.data.id}>
-          <img src={link + props.data.poster_path} alt="" />
+        <Link to={props.data.id}>
+          <img src={link + props.data.thumbnail} alt="" />
           <h1>{props.data.title}</h1>
-          <p>{props.data.overview}</p>
+          <p>{props.data.genre}</p>
         </Link>
       </div>
     );
