@@ -3,7 +3,7 @@ import "./Style.css";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { useState } from "react";
 import Header from "./Pages/header";
-import GameList from "./Pages/GameList"
+import All from "./Pages/All";
 
 function App() {
   const [num, setNum] = useState(2);
@@ -12,9 +12,10 @@ function App() {
     <div className="main">
       <BrowserRouter>
         <Header />
+        <All />
       </BrowserRouter>
       <div className="container">
-        <Catalog />
+        
       </div>
     </div>
   );
