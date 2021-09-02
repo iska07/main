@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import GameList from "./GameList";
 
 // const Catalog = () => {
 //   const number = 5;
@@ -9,21 +8,19 @@ import { Link } from "react-router-dom";
 //   };
 //   return <button onClick={() => fn()}>Нажать сюда</button>;
 // };
-const link = 'https://image.tmdb.org/t/p/w500'
+// const link = 'https://image.tmdb.org/t/p/w500'
 
 function Catalog (props) {
-    const link = 'https://image.tmdb.org/t/p/w500'
-  
-  
-    console.log(props.data)
+    
     return (
       <div className="Catalog">
         <Link to={'/movie/' + props.data.id}>
-          <img src={link + props.data.thumbnail} alt="" />
+          <img src={props.data.thumbnail} alt="" />
           <h1>{props.data.title}</h1>
           <p>{props.data.genre}</p>
         </Link>
       </div>
     );
   }
+
 export default Catalog
